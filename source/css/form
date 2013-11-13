@@ -1,0 +1,99 @@
+.styled_select{
+	display:inline-block;
+	width:100%;height:25px;
+	color:white;
+	border:2px solid #339098;
+	padding:0 0px 0 4px;
+	background-color:#339098;
+	background-image:url('../images/selector.png');
+	background-repeat:no-repeat;
+	background-position: right -25px;
+	overflow:hidden;
+	white-space: nowrap;
+	cursor:pointer;
+}
+
+.styled_select:hover{
+	border:2px solid #fff;
+}
+
+.styled_select_list {
+	position:absolute;
+	display:none;
+	max-height:70%;
+	border:0px solid silver;
+	background-color:white;
+	padding:4px;
+	color:silver;
+	overflow:auto;
+	z-index:10000;
+	font:16px Arial;
+}
+
+.styled_select_list .item{
+	color:#777;
+	display:block;
+	/*min-height:25px;*/
+	/*margin:7px -4px 2px -4px;*/
+	padding: 5px 0 5px 5px;
+	/*padding:0 0 0 5px;*/
+	cursor:pointer;
+}
+
+.styled_select_list .item:hover{
+	background-color: #c6c6c6;
+	color: #339098;
+}
+/*///////////////////////////////
+//CHECKBOX
+///////////////////////////////*/
+.styled_checkbox_label{
+	display:inline-block;
+	height:23px;
+	padding:0 7px 2px 29px;
+	background-image:url("../images/checkbox.png");
+	background-repeat:no-repeat;
+	background-color:#339098;
+	opacity:0.9;
+	overflow:hidden;	
+}
+
+.styled_checkbox_label:hover{
+	background-color:#339098;
+	opacity:1;
+}
+
+input[type=checkbox]:checked + .styled_checkbox_label{
+	background-position:0 -25px;
+}
+/*/////////////////////////////////*/
+/*OTHER*/
+/*/////////////////////////////////*/
+input[type=text],input[type=password] {
+	display:inline-block;
+	height:25px;width:200px;
+	border:0px solid white;
+	font-size:21px;
+	padding:0 5px 2px 5px;
+	overflow:hidden;
+	opacity:0.8;
+}
+
+input[type=text]:hover,input[type=password]:hover {
+	opacity:1;
+}
+
+input[type=button],button{
+	height:33px;
+	background-color:transparent;
+	border:0px solid black;
+	color:white;
+	padding:0;
+	font:16px Arial;
+	opacity:0.8;
+	margin:7px 0 7px 0;
+	text-align:left;
+}
+input[type=button],button:hover{
+	opacity:1;
+}
