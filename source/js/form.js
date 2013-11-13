@@ -63,7 +63,6 @@ $(document).ready(function style(){
 		object.css("display","none");
 		new_select.text(object.find("option:selected").text());
 		object.after(new_select);
-		//$('#id_' + object.attr("id")).width($('#id_' + object.attr("id")).width()+20);
 		
 		
 		//Создаю новый выпадающий список
@@ -111,9 +110,6 @@ $(document).ready(function style(){
 		if (!objectId) return;
 		object = $('#'+objectId+'');
 		
-		//position 		= object.position();		
-		//posX			= position.left;
-		//posY 			= position.top;
 		$('label').each(function(){
 			if ( $(this).attr('for')==objectId ) $(this).remove();
 		});
@@ -123,12 +119,9 @@ $(document).ready(function style(){
 			'for': objectId,
 			"class": "styled_checkbox_label",
 			"title": object.attr('data-text'),
-			//style: ';' + object.attr("style"),
 			click: function(e) {				
 			}
 		});
-		//label = '<label for="'+objectId+'" class="styled_checkbox_label">'+object.attr('data-text')+'</label>';
-		//alert(label);
 		label.text(object.attr('data-text'));
 		object.after(label);
 		
